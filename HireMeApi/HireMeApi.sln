@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMeApi.Data", "HireMeApi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMeApi.Domain", "HireMeApi.Domain\HireMeApi.Domain.csproj", "{F4539794-39AB-498E-836B-96D4F7E85F93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HireMeApi.IntegrationTests", "HireMeApi.IntegrationTests\HireMeApi.IntegrationTests.csproj", "{9232F06E-3CAC-4641-8361-F345A6015BE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F4539794-39AB-498E-836B-96D4F7E85F93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4539794-39AB-498E-836B-96D4F7E85F93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4539794-39AB-498E-836B-96D4F7E85F93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9232F06E-3CAC-4641-8361-F345A6015BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9232F06E-3CAC-4641-8361-F345A6015BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9232F06E-3CAC-4641-8361-F345A6015BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9232F06E-3CAC-4641-8361-F345A6015BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
