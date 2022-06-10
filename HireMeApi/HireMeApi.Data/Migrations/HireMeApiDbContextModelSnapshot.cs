@@ -37,52 +37,62 @@ namespace HireMeApi.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("716b049d-ea56-4be9-beb4-872e92309e08"),
+                            Id = new Guid("d96dd728-f987-4d0b-b070-15d5b51276f9"),
+                            Description = "This is a very long description about device 1",
                             Name = "Device 1"
                         },
                         new
                         {
-                            Id = new Guid("740ed1aa-24d6-47f7-89f4-918833c93d94"),
+                            Id = new Guid("83682980-59b1-4784-97df-260ced1f8d5e"),
+                            Description = "This is a very long description about device 2",
                             Name = "Device 2"
                         },
                         new
                         {
-                            Id = new Guid("8d824a3a-5c14-4d0e-9f6d-8e2f3f8eac44"),
+                            Id = new Guid("692d1515-ee4b-497c-8151-733e292dbe47"),
+                            Description = "This is a very long description about device 3",
                             Name = "Device 3"
                         },
                         new
                         {
-                            Id = new Guid("997bfeb4-fc99-4cae-9b5a-5fd194ebd302"),
+                            Id = new Guid("85a9f92e-1869-4a53-be14-17baeea0b3ca"),
+                            Description = "This is a very long description about device 4",
                             Name = "Device 4"
                         },
                         new
                         {
-                            Id = new Guid("34357646-4c66-4f48-b9ef-55a112d2564a"),
+                            Id = new Guid("fb6eca2d-878b-4828-abfc-83bb43609a40"),
+                            Description = "This is a very long description about device 5",
                             Name = "Device 5"
                         },
                         new
                         {
-                            Id = new Guid("03ed13c4-9e7c-4b74-9d8b-b88c63b8feb6"),
+                            Id = new Guid("c9994f3c-96e8-491a-b6ac-18150707c154"),
+                            Description = "This is a very long description about device 6",
                             Name = "Device 6"
                         },
                         new
                         {
-                            Id = new Guid("4c1c23cd-cf06-4d5f-9491-a1733651ea7a"),
+                            Id = new Guid("bafa65a7-1865-4478-9f18-836640e7395b"),
+                            Description = "This is a very long description about device 7",
                             Name = "Device 7"
                         },
                         new
                         {
-                            Id = new Guid("22147ae1-60ec-4bcb-a601-bc133d5a8c8c"),
+                            Id = new Guid("bedb5752-53c9-4723-9cb1-c68803e40f34"),
+                            Description = "This is a very long description about device 8",
                             Name = "Device 8"
                         },
                         new
                         {
-                            Id = new Guid("1118aff0-b4be-40bc-a1c5-03cf037927a8"),
+                            Id = new Guid("700e4109-d340-4316-9c39-8c0b64c60fd4"),
+                            Description = "This is a very long description about device 9",
                             Name = "Device 9"
                         },
                         new
                         {
-                            Id = new Guid("0241c522-260c-4342-a99e-d4b375f9c2ee"),
+                            Id = new Guid("bb35d8af-352d-4387-9b3e-925e97506020"),
+                            Description = "This is a very long description about device 10",
                             Name = "Device 10"
                         });
                 });

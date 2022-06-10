@@ -21,7 +21,10 @@ public class HireMeApiDbContext : DbContext
                 var existingDevices = new List<IotDevice>();
                 for (var i = 0; i < 10; i++)
                 {
-                    existingDevices.Add(new IotDevice(Guid.NewGuid(), $"Device {i + 1}"));
+                    existingDevices.Add(new IotDevice(Guid.NewGuid(), $"Device {i + 1}")
+                    {
+                        Description = $"This is a very long description about device {i + 1}"
+                    });
                 }
 
                 entity.HasData(existingDevices);
