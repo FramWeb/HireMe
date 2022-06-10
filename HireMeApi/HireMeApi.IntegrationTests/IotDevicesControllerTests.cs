@@ -15,6 +15,30 @@ public class IotDevicesControllerTests : BaseTest
     }
 
     [Fact]
+    public async Task GetAll_GetsAllDevicesSortedByName()
+    {
+        var iotDevices = new List<IotDevice>
+        {
+            new(Guid.NewGuid(), "Device 4"),
+            new(Guid.NewGuid(), "Device 1"),
+            new(Guid.NewGuid(), "Device 6"),
+            new(Guid.NewGuid(), "Device 2"),
+            new(Guid.NewGuid(), "Device 5"),
+            new(Guid.NewGuid(), "Device 3")
+        };
+
+        await DbContext.AddRangeAsync(iotDevices);
+        await DbContext.SaveChangesAsync();
+
+        var result = await _controller.GetAll();
+
+        Assert.NotNull(result);
+        var actual = result.Value;
+        Assert.NotNull(actual);
+        Assert.NotEmpty(actual);
+    }
+
+    [Fact]
     public async Task GetSingle_GetsCorrectDevice()
     {
         var expectedId = Guid.NewGuid();
