@@ -27,7 +27,7 @@ public class IotDevicesControllerTests : BaseTest
             new(Guid.NewGuid(), "Device 3")
         };
 
-        await DbContext.AddRangeAsync(iotDevices);
+        DbContext.AddRange(iotDevices);
         await DbContext.SaveChangesAsync();
 
         var result = await _controller.GetAll();
@@ -43,7 +43,7 @@ public class IotDevicesControllerTests : BaseTest
     {
         var expectedId = Guid.NewGuid();
         var expectedIotDevice = new IotDevice(expectedId, "Device 1");
-        await DbContext.IotDevices.AddAsync(expectedIotDevice);
+        DbContext.IotDevices.Add(expectedIotDevice);
         await DbContext.SaveChangesAsync();
 
         var result = await _controller.GetSingle(expectedId);
@@ -65,8 +65,8 @@ public class IotDevicesControllerTests : BaseTest
         {
             new(Guid.NewGuid(), "Don't delete me 1"), new(Guid.NewGuid(), "Don't delete me 2")
         };
-        await DbContext.IotDevices.AddAsync(expectedIotDevice);
-        await DbContext.IotDevices.AddRangeAsync(otherIotDevices);
+        DbContext.IotDevices.Add(expectedIotDevice);
+        DbContext.IotDevices.AddRange(otherIotDevices);
         await DbContext.SaveChangesAsync();
 
         var result = await _controller.DeleteSingle(expectedId);
